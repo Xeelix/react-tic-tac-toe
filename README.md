@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# React Tic Tac Toe 
 
 Implementation of a tic-tac-toe game written in React and Tailwind.
 
