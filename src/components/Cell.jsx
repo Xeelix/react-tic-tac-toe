@@ -14,12 +14,12 @@ const Cell = ({ value, onClick, animation }) => {
 	};
 
 	return (
-		<a
+		<div
 			onClick={onClick}
 			className={`w-${cellSize} h-${cellSize} flex flex-wrap content-center justify-center bg-primary`}
 		>
 			{noughtOrCross(value, animation)}
-		</a>
+		</div>
 	);
 };
 

@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react";
 import Cell from "./Cell";
 
 const Board = ({ squares, onClick, winner, animation }) => {
-	const [winnerDistribution, setWinnerDistribution] = useState(winner);
-	const [localWinner, setLocalWinner] = useState(null);
-	const [index, seIndex] = useState(-1);
-
+	// Classes for winner line locations
 	const lineDirection = [
 		"horizTop",
 		"horizMid",
@@ -30,6 +27,7 @@ const Board = ({ squares, onClick, winner, animation }) => {
 				);
 			})}
 
+			{/* Drawing line if winner exists */}
 			{winner !== null && winner >= 0 && (
 				<div
 					className={`line absolute h-60 border-l-4 ${lineDirection[winner]} ${animation}`}
