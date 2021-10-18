@@ -1,12 +1,12 @@
 import React from "react";
 
-const NoughtsComponent = ({className}) => {
+const NoughtsComponent = ({className, size=35}) => {
 	return (
 		<>
 			<svg
 				className={className}
-				width={35}
-				height={35}
+				width={size}
+				height={size}
 				viewBox="0 0 484 484"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"

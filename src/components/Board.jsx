@@ -32,7 +32,7 @@ const Board = ({ squares, onClick, winner, animation }) => {
 
 			{winner !== null && winner >= 0 && (
 				<div
-					className={`line absolute h-60 border-red-700 border-l-2 ${lineDirection[winner]} `}
+					className={`line absolute h-60 border-l-4 ${lineDirection[winner]} ${animation}`}
 				></div>
 			)}
 		</div>

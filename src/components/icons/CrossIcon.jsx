@@ -1,11 +1,11 @@
 import React from "react";
 
-const CrossesComponent = ({ className }) => {
+const CrossesComponent = ({ className, size=35 }) => {
 	return (
 		<svg
 			className={className}
-			width={35}
-			height={35}
+			width={size}
+			height={size}
 			viewBox="0 0 608 608"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
