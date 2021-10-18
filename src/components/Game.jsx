@@ -52,7 +52,6 @@ const Game = () => {
 
 	const handleRestartClick = () => {
 		setCellAnimation("animate-fade-out");
-		// setMainArray(Array(9).fill(null));
 	};
 
 	return (

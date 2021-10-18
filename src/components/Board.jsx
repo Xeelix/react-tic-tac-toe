@@ -6,6 +6,16 @@ const Board = ({ squares, onClick, winner, animation }) => {
 	const [localWinner, setLocalWinner] = useState(null);
 	const [index, seIndex] = useState(-1);
 
+	const lineDirection = [
+		"horizTop",
+		"horizMid",
+		"horizBtm",
+		"vertL",
+		"vertM",
+		"vertR",
+		"diagL",
+		"diagR",
+	];
 
 	return (
 		<div className="grid grid-cols-3 gap-0.25 bg-gray-900">
@@ -16,18 +26,15 @@ const Board = ({ squares, onClick, winner, animation }) => {
 						value={square}
 						onClick={() => onClick(i)}
 						animation={animation}
-						className={winner}
 					/>
 				);
 			})}
 
-			{winner && (
-				<div className="line absolute h-60 border-red-700 border-l-2 diagR ">
-					
-				</div>
+			{winner !== null && winner >= 0 && (
+				<div
+					className={`line absolute h-60 border-red-700 border-l-2 ${lineDirection[winner]} `}
+				></div>
 			)}
-
-
 		</div>
 	);
 };
