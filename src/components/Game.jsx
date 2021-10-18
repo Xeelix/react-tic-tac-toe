@@ -100,7 +100,7 @@ const Game = () => {
 			<div className="flex items-center mb-10 px-4 py-3 bg-gray-300 w-60 rounded-lg font-medium text-xl">
 				{winner ? (
 					<>
-						<ModalTitle text=" - has won" />
+						<ModalTitle text=" - Winner" />
 					</>
 				) : (
 					<>
@@ -127,7 +127,7 @@ const Game = () => {
 
 			{/* Modal window */}
 			<ModalWindow
-				title={<ModalTitle text=" - has won" />}
+				title={<ModalTitle text=" - Winner" />}
 				message="Press button to restart"
 				buttonText="Restart"
 				handleClick={handleRestartClick}
