@@ -10,6 +10,29 @@ module.exports = {
 			gap: {
 				0.25: "0.09rem",
 			},
+
+			keyframes: {
+				"fade-in": {
+					"0%": {
+						opacity: "0",
+					},
+					"100%": {
+						opacity: "1",
+					},
+				},
+				"fade-out": {
+					"0%": {
+						opacity: "1",
+					},
+					"100%": {
+						opacity: "0",
+					},
+				},
+			},
+			animation: {
+				"fade-in": "fade-in 0.3s ease-out",
+				"fade-out": "fade-out 0.3s ease-out",
+			},
 		},
 	},
 	variants: {

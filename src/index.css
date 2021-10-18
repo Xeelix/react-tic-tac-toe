@@ -3,3 +3,45 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.vis {
+	opacity: 1;
+}
+
+.invis {
+	opacity: 0;
+}
+
+div.line {
+	/* position: absolute; */
+	z-index: 1;
+}
+
+.vertL {
+	transform: translate(2.45em, 0);
+}
+.vertM {
+	transform: translate(7.53em, 0);
+}
+.vertR {
+	transform: translate(12.6em, 0);
+}
+
+.horizTop {
+	transform: translate(7.55em, -5em) rotate(90deg);
+}
+.horizMid {
+	transform: translate(7.55em, 0.10em) rotate(90deg);
+}
+.horizBtm {
+	transform: translate(7.55em, 5.18em) rotate(90deg);
+}
+
+.diagR {
+	height: 19em;
+	transform: translate(7.31em, -1.7em) rotate(45deg);
+}
+.diagL {
+	height: 19em;
+	transform: translate(7.8em, -1.6em) rotate(-45deg);
+}
