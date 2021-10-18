@@ -26,7 +26,7 @@ const Game = () => {
 
 	// Hook for open modal window if winner exist
 	useEffect(() => {
-		if (winner) {
+		if (winner !== null) {
 			setOpenModalWindow(true);
 		}
 	}, [winner]);
